@@ -271,6 +271,8 @@
 								<InputField name="ВидВерсии" id="57">
 									<DataPath>ВидВерсииПлана</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
 									<ContextMenu name="ВидВерсииКонтекстноеМеню" id="58"/>
 									<ExtendedTooltip name="ВидВерсииРасширеннаяПодсказка" id="59"/>
 								</InputField>
@@ -376,6 +378,9 @@
 							<ChildItems>
 								<InputField name="ДатаНачалаПроекта" id="186">
 									<DataPath>ДатаНачалаПроекта</DataPath>
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
 									<ContextMenu name="ДатаНачалаПроектаКонтекстноеМеню" id="187"/>
 									<ExtendedTooltip name="ДатаНачалаПроектаРасширеннаяПодсказка" id="188"/>
 									<Events>
