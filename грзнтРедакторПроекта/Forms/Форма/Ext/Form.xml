@@ -2655,6 +2655,7 @@
 										<InputField name="ТаблицаПланДвиженияДенежныхСредствНаправление" id="928">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств.Направление</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<TextEdit>false</TextEdit>
 											<ContextMenu name="ТаблицаПланДвиженияДенежныхСредствНаправлениеКонтекстноеМеню" id="929"/>
 											<ExtendedTooltip name="ТаблицаПланДвиженияДенежныхСредствНаправлениеРасширеннаяПодсказка" id="930"/>
 											<Events>
