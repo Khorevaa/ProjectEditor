@@ -1927,11 +1927,11 @@
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<HeaderPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтСкрепкаИконка</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</HeaderPicture>
 									<ValuesPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтСкрепка</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</ValuesPicture>
 									<ContextMenu name="ДеревоПроектаЕстьКомментарийКонтекстноеМеню" id="1524"/>
@@ -2591,7 +2591,7 @@
 									<DataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств</DataPath>
 									<RowPictureDataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств.Картинка</RowPictureDataPath>
 									<RowsPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтВидыРасчетов</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
@@ -3291,6 +3291,7 @@
 											<ContextMenu name="ТаблицаПланРолейОбщаяВидСтавкиКонтекстноеМеню" id="1255"/>
 											<ExtendedTooltip name="ТаблицаПланРолейОбщаяВидСтавкиРасширеннаяПодсказка" id="1256"/>
 											<Events>
+												<Event name="OnChange">ТаблицаПланРолейОбщаяВидСтавкиПриИзменении</Event>
 												<Event name="StartChoice">ТаблицаПланРолейОбщаяВидСтавкиНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -12564,6 +12565,21 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФормыРедактирования" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя формы редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
