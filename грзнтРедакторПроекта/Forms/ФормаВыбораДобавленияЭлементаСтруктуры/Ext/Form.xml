@@ -64,6 +64,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="СписокВыбора" id="1">
+			<Representation>Tree</Representation>
 			<ReadOnly>true</ReadOnly>
 			<HeightInTableRows>9</HeightInTableRows>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -87,7 +88,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
+			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="СписокВыбораКонтекстноеМеню" id="2"/>
