@@ -178,6 +178,12 @@
 							<CommandName>Form.Command.КомандаСохранитьНастройку</CommandName>
 							<ExtendedTooltip name="КомандаСохранитьНастройкуРасширеннаяПодсказка" id="1441"/>
 						</Button>
+						<Button name="КомандаЗаполнитьДемоДанные" id="1545">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.КомандаЗаполнитьДемоДанные</CommandName>
+							<ExtendedTooltip name="КомандаЗаполнитьДемоДанныеРасширеннаяПодсказка" id="1546"/>
+						</Button>
 					</ChildItems>
 				</CommandBar>
 				<CommandBar name="ГруппаКоманднаяПанельСохранениеВосстановление" id="1436">
@@ -265,6 +271,8 @@
 								<InputField name="ВидВерсии" id="57">
 									<DataPath>ВидВерсииПлана</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
 									<ContextMenu name="ВидВерсииКонтекстноеМеню" id="58"/>
 									<ExtendedTooltip name="ВидВерсииРасширеннаяПодсказка" id="59"/>
 								</InputField>
@@ -370,6 +378,9 @@
 							<ChildItems>
 								<InputField name="ДатаНачалаПроекта" id="186">
 									<DataPath>ДатаНачалаПроекта</DataPath>
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
 									<ContextMenu name="ДатаНачалаПроектаКонтекстноеМеню" id="187"/>
 									<ExtendedTooltip name="ДатаНачалаПроектаРасширеннаяПодсказка" id="188"/>
 									<Events>
@@ -787,12 +798,7 @@
 										<CommandName>Form.Command.КомандаДереваЗаполнитьДаннымиПоЗадаче</CommandName>
 										<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДереваЗаполнитьДаннымиПоЗадачеРасширеннаяПодсказка" id="1452"/>
 									</Button>
-									<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЗадачиПроекта" id="1487">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.КомандаДобавитьЗадачиПроекта</CommandName>
-										<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЗадачиПроектаРасширеннаяПодсказка" id="1488"/>
-									</Button>
-									<Popup name="ДеревоПроектаКонтекстноеМенюГруппаДобавитьСтруктуруПроекта" id="1553">
+									<Popup name="ДеревоПроектаКонтекстноеМенюГруппаДобавитьСтруктуруПроекта" id="1547">
 										<Title>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -802,30 +808,35 @@
 										<ToolTip>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Добавить элемент проекта</v8:content>
+												<v8:content>Дерево проекта контекстное меню группа добавить структуру проекта</v8:content>
 											</v8:item>
 										</ToolTip>
-										<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюГруппаДобавитьСтруктуруПроектаРасширеннаяПодсказка" id="1554"/>
+										<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюГруппаДобавитьСтруктуруПроектаРасширеннаяПодсказка" id="1548"/>
 										<ChildItems>
-											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьПродукт" id="1555">
+											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЗадачиПроекта" id="1487">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.КомандаДобавитьЗадачиПроекта</CommandName>
+												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЗадачиПроектаРасширеннаяПодсказка" id="1488"/>
+											</Button>
+											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьПродукт" id="1549">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьПродукт</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьПродуктРасширеннаяПодсказка" id="1556"/>
+												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьПродуктРасширеннаяПодсказка" id="1550"/>
 											</Button>
-											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьТехпроцесс" id="1557">
+											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьТехпроцесс" id="1551">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьТехпроцесс</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьТехпроцессРасширеннаяПодсказка" id="1558"/>
+												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьТехпроцессРасширеннаяПодсказка" id="1552"/>
 											</Button>
-											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьУправленческиеРаботы" id="1559">
+											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьУправленческиеРаботы" id="1553">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьУправленческиеРаботы</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьУправленческиеРаботыРасширеннаяПодсказка" id="1560"/>
+												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьУправленческиеРаботыРасширеннаяПодсказка" id="1554"/>
 											</Button>
-											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЮридическийДоговор" id="1561">
+											<Button name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЮридическийДоговор" id="1555">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьЮридическийДоговор</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЮридическийДоговорРасширеннаяПодсказка" id="1562"/>
+												<ExtendedTooltip name="ДеревоПроектаКонтекстноеМенюКомандаДобавитьЮридическийДоговорРасширеннаяПодсказка" id="1556"/>
 											</Button>
 										</ChildItems>
 									</Popup>
@@ -960,7 +971,7 @@
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
-									<Popup name="ДеревоПроектаГруппаДобавитьСтруктуруПроекта" id="1543">
+									<Popup name="ДеревоПроектаГруппаСтруктураПроектаДобавить" id="1557">
 										<Title>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -970,30 +981,30 @@
 										<ToolTip>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Добавить элемент структуры проекта</v8:content>
+												<v8:content>Добавить элементы структуры проекта</v8:content>
 											</v8:item>
 										</ToolTip>
-										<ExtendedTooltip name="ДеревоПроектаГруппаДобавитьСтруктуруПроектаРасширеннаяПодсказка" id="1544"/>
+										<ExtendedTooltip name="ДеревоПроектаГруппаСтруктураПроектаДобавитьРасширеннаяПодсказка" id="1558"/>
 										<ChildItems>
-											<Button name="ДеревоПроектаКомандаДобавитьПродукт" id="1545">
+											<Button name="ДеревоПроектаКомандаДобавитьПродукт" id="1559">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьПродукт</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьПродуктРасширеннаяПодсказка" id="1546"/>
+												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьПродуктРасширеннаяПодсказка" id="1560"/>
 											</Button>
-											<Button name="ДеревоПроектаКомандаДобавитьТехпроцесс" id="1547">
+											<Button name="ДеревоПроектаКомандаДобавитьТехпроцесс" id="1561">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьТехпроцесс</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьТехпроцессРасширеннаяПодсказка" id="1548"/>
+												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьТехпроцессРасширеннаяПодсказка" id="1562"/>
 											</Button>
-											<Button name="ДеревоПроектаКомандаДобавитьУправленческиеРаботы" id="1549">
+											<Button name="ДеревоПроектаКомандаДобавитьУправленческиеРаботы" id="1563">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьУправленческиеРаботы</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьУправленческиеРаботыРасширеннаяПодсказка" id="1550"/>
+												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьУправленческиеРаботыРасширеннаяПодсказка" id="1564"/>
 											</Button>
-											<Button name="ДеревоПроектаКомандаДобавитьЮридическийДоговор" id="1551">
+											<Button name="ДеревоПроектаКомандаДобавитьЮридическийДоговор" id="1565">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.КомандаДобавитьЮридическийДоговор</CommandName>
-												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьЮридическийДоговорРасширеннаяПодсказка" id="1552"/>
+												<ExtendedTooltip name="ДеревоПроектаКомандаДобавитьЮридическийДоговорРасширеннаяПодсказка" id="1566"/>
 											</Button>
 										</ChildItems>
 									</Popup>
@@ -1990,11 +2001,11 @@
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<HeaderPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтСкрепкаИконка</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</HeaderPicture>
 									<ValuesPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтСкрепка</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</ValuesPicture>
 									<ContextMenu name="ДеревоПроектаЕстьКомментарийКонтекстноеМеню" id="1524"/>
@@ -2654,7 +2665,7 @@
 									<DataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств</DataPath>
 									<RowPictureDataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств.Картинка</RowPictureDataPath>
 									<RowsPicture>
-										<xr:Ref>0</xr:Ref>
+										<xr:Ref>CommonPicture.грзнтВидыРасчетов</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
@@ -2718,6 +2729,7 @@
 										<InputField name="ТаблицаПланДвиженияДенежныхСредствНаправление" id="928">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств.Направление</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<TextEdit>false</TextEdit>
 											<ContextMenu name="ТаблицаПланДвиженияДенежныхСредствНаправлениеКонтекстноеМеню" id="929"/>
 											<ExtendedTooltip name="ТаблицаПланДвиженияДенежныхСредствНаправлениеРасширеннаяПодсказка" id="930"/>
 											<Events>
@@ -2797,7 +2809,7 @@
 										<InputField name="ТаблицаПланДвиженияДенежныхСредствПрофильРаспределения" id="940">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланДвиженияДенежныхСредств.ПрофильРаспределения</DataPath>
 											<EditMode>EnterOnInput</EditMode>
-											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
 											<ContextMenu name="ТаблицаПланДвиженияДенежныхСредствПрофильРаспределенияКонтекстноеМеню" id="941"/>
 											<ExtendedTooltip name="ТаблицаПланДвиженияДенежныхСредствПрофильРаспределенияРасширеннаяПодсказка" id="942"/>
 										</InputField>
@@ -2991,7 +3003,6 @@
 										<InputField name="ТаблицаПланДоходовПрофильРаспределения" id="1042">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланДоходов.ПрофильРаспределения</DataPath>
 											<EditMode>EnterOnInput</EditMode>
-											<AutoMarkIncomplete>true</AutoMarkIncomplete>
 											<ContextMenu name="ТаблицаПланДоходовПрофильРаспределенияКонтекстноеМеню" id="1043"/>
 											<ExtendedTooltip name="ТаблицаПланДоходовПрофильРаспределенияРасширеннаяПодсказка" id="1044"/>
 										</InputField>
@@ -3355,6 +3366,7 @@
 											<ContextMenu name="ТаблицаПланРолейОбщаяВидСтавкиКонтекстноеМеню" id="1255"/>
 											<ExtendedTooltip name="ТаблицаПланРолейОбщаяВидСтавкиРасширеннаяПодсказка" id="1256"/>
 											<Events>
+												<Event name="OnChange">ТаблицаПланРолейОбщаяВидСтавкиПриИзменении</Event>
 												<Event name="StartChoice">ТаблицаПланРолейОбщаяВидСтавкиНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -3373,12 +3385,6 @@
 											<ContextMenu name="ТаблицаПланРолейОбщаяВалютаКонтекстноеМеню" id="977"/>
 											<ExtendedTooltip name="ТаблицаПланРолейОбщаяВалютаРасширеннаяПодсказка" id="978"/>
 										</InputField>
-										<InputField name="ТаблицаПланРолейОбщаяПрофильРаспределения" id="979">
-											<DataPath>Items.ДеревоПроекта.CurrentData.ПланРолейОбщая.ПрофильРаспределения</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаПланРолейОбщаяПрофильРаспределенияКонтекстноеМеню" id="980"/>
-											<ExtendedTooltip name="ТаблицаПланРолейОбщаяПрофильРаспределенияРасширеннаяПодсказка" id="981"/>
-										</InputField>
 										<InputField name="ТаблицаПланРолейОбщаяСпособПривязки" id="994">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланРолейОбщая.СпособПривязки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -3390,6 +3396,12 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаПланРолейОбщаяДатаПривязкиКонтекстноеМеню" id="998"/>
 											<ExtendedTooltip name="ТаблицаПланРолейОбщаяДатаПривязкиРасширеннаяПодсказка" id="999"/>
+										</InputField>
+										<InputField name="ТаблицаПланРолейОбщаяПрофильРаспределения" id="979">
+											<DataPath>Items.ДеревоПроекта.CurrentData.ПланРолейОбщая.ПрофильРаспределения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаПланРолейОбщаяПрофильРаспределенияКонтекстноеМеню" id="980"/>
+											<ExtendedTooltip name="ТаблицаПланРолейОбщаяПрофильРаспределенияРасширеннаяПодсказка" id="981"/>
 										</InputField>
 										<CheckBoxField name="ТаблицаПланРолейОбщаяОтражатьВРасходах" id="982">
 											<DataPath>Items.ДеревоПроекта.CurrentData.ПланРолейОбщая.ОтражатьВРасходах</DataPath>
@@ -12630,6 +12642,21 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИмяФормыРедактирования" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя формы редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -14520,20 +14547,26 @@
 			<Action>КомандаОткрытьСравнениеВерсийПланов</Action>
 			<Representation>Picture</Representation>
 		</Command>
-		<Command name="КомандаДобавитьТехпроцесс" id="57">
+		<Command name="КомандаЗаполнитьДемоДанные" id="57">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить техпроцесс</v8:content>
+					<v8:content>Заполнить демо данные</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить техпроцесс</v8:content>
+					<v8:content>Команда заполнить демо данные</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>КомандаДобавитьТехпроцесс</Action>
+			<Shortcut>Ctrl+G</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.SettingsStorage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаполнитьДемоДанные</Action>
+			<Representation>Picture</Representation>
 		</Command>
 		<Command name="КомандаДобавитьПродукт" id="58">
 			<Title>
@@ -14550,7 +14583,22 @@
 			</ToolTip>
 			<Action>КомандаДобавитьПродукт</Action>
 		</Command>
-		<Command name="КомандаДобавитьУправленческиеРаботы" id="59">
+		<Command name="КомандаДобавитьТехпроцесс" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить техпроцесс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить техпроцесс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаДобавитьТехпроцесс</Action>
+		</Command>
+		<Command name="КомандаДобавитьУправленческиеРаботы" id="60">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -14565,7 +14613,7 @@
 			</ToolTip>
 			<Action>КомандаДобавитьУправленческиеРаботы</Action>
 		</Command>
-		<Command name="КомандаДобавитьЮридическийДоговор" id="60">
+		<Command name="КомандаДобавитьЮридическийДоговор" id="61">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
